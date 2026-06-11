@@ -95,7 +95,7 @@ const DEFAULT_DATABASE = {
       id: 8,
       date: "2025-12-09",
       title: "Graduación Michela",
-      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión, ya que también cumpliamos el primer mes de novios ❤️🩹.",
+      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión, ya que cumpliamos de hecho el primer mes de novios❤️🩹",
       img: "https://i.postimg.cc/RCfnjz4x/Whats-App-Image-2026-05-31-at-09-53-10.jpg"
     },
     {
@@ -174,7 +174,7 @@ const DEFAULT_DATABASE = {
       id: 8,
       title: "Graduación Michela",
       date: "2025-12-09",
-      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión.",
+      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión, ya que cumpliamos de hecho el primer mes de novios❤️🩹",
       img: "https://i.postimg.cc/RCfnjz4x/Whats-App-Image-2026-05-31-at-09-53-10.jpg"
     },
     {
@@ -290,7 +290,7 @@ function loadDatabase() {
     createSaveSharedDataBanner();
   } else {
     // Cargar de LocalStorage
-    const localData = localStorage.getItem("scrapbook_db_v4");
+    const localData = localStorage.getItem("scrapbook_db_v5");
     if (localData) {
       try {
         db = JSON.parse(localData);
@@ -326,7 +326,7 @@ function loadDatabase() {
 
 function saveDBToLocalStorage() {
   db.playlist = MusicPlayer.playlist;
-  localStorage.setItem("scrapbook_db_v4", JSON.stringify(db));
+  localStorage.setItem("scrapbook_db_v5", JSON.stringify(db));
 }
 
 function createSaveSharedDataBanner() {
