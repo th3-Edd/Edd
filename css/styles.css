@@ -2174,6 +2174,9 @@ img {
   font-size: 0.88rem;
   color: rgba(255, 255, 255, 0.65);
   margin-top: 6px;
+  max-height: 30vh;
+  overflow-y: auto;
+  padding: 0 10px;
 }
 
 .lightbox-toolbar {

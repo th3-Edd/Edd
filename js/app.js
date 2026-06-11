@@ -231,6 +231,14 @@ const DEFAULT_DATABASE = {
       sender: "Eduardo",
       receiver: "Michela",
       text: "Si por azares del destino, que de hecho no creo en ello, pero si por voluntad de Dios, nuestros caminos se llegaran a topar algún día, podría asegurar que yo no habría cambiado demasiado, seguiría tendiendo los mismos colores favoritos, escucharía la misma música, y me gustarían las mismas cosas, pero tendría las dudas de si a ti te seguirían gustando las fresas con crema, los gatos, el jugo de maracuyá, el número 4, la bachata, la letra V, si aun te gustarían las medusas, o el suchi jsjs, pero aún así, de lo que no tendría dudas es de que tu lugar en mi corazón seguiría estando ahí, a pesar del tiempo transcurrido, Así que, oraré siempre por tu felicidad, y que nuestras acciones sean sólo la excusa para que la mano de Dios obre en nuestras vidas✨."
+    },
+    {
+      id: 5,
+      title: "Sobre la página.",
+      date: "33/33/3333",
+      sender: "Eduardo",
+      receiver: "Michela",
+      text: "Se mantendrá abierta siempre, a menos que se cayeran los servidores o se dañen los códigos, o no pueda darle mantenimiento, empecé a programarla el 28 de mayo, hoy es 11 de junio, no sé exactamente cuando termine, si haces cambios en el candado superior, con la clave 1234, se verán reflejados únicamente en tu dispositivo, ya sea laptop o celular, cosas como agregar más cartas, cambiar imágenes, textos y de más, a menos de que se programen en los códigos, no serán visibles para nadie más."
     }
   ]
 };
@@ -290,7 +298,7 @@ function loadDatabase() {
     createSaveSharedDataBanner();
   } else {
     // Cargar de LocalStorage
-    const localData = localStorage.getItem("scrapbook_db_v5");
+    const localData = localStorage.getItem("scrapbook_db_v6");
     if (localData) {
       try {
         db = JSON.parse(localData);
@@ -298,6 +306,15 @@ function loadDatabase() {
         db.navTabs = db.navTabs || DEFAULT_DATABASE.navTabs;
         db.animationSettings = db.animationSettings || DEFAULT_DATABASE.animationSettings;
         db.letters = db.letters || DEFAULT_DATABASE.letters;
+        
+        // Asegurar que las cartas nuevas en el código se reflejen en la base de datos local
+        if (db.letters && Array.isArray(db.letters)) {
+          DEFAULT_DATABASE.letters.forEach(defaultLetter => {
+            if (!db.letters.some(l => l.id === defaultLetter.id)) {
+              db.letters.push(defaultLetter);
+            }
+          });
+        }
         db.footerTagline = db.footerTagline || DEFAULT_DATABASE.footerTagline;
         db.footerCopyright = db.footerCopyright || DEFAULT_DATABASE.footerCopyright;
         db.logoText = db.logoText || DEFAULT_DATABASE.logoText;
@@ -326,7 +343,7 @@ function loadDatabase() {
 
 function saveDBToLocalStorage() {
   db.playlist = MusicPlayer.playlist;
-  localStorage.setItem("scrapbook_db_v5", JSON.stringify(db));
+  localStorage.setItem("scrapbook_db_v6", JSON.stringify(db));
 }
 
 function createSaveSharedDataBanner() {
@@ -1117,7 +1134,7 @@ function updateLightboxContent() {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     date.textContent = dateObj.toLocaleDateString('es-ES', options);
     
-    document.getElementById("lightbox-desc").textContent = photo.desc || "";
+    document.getElementById("lightbox-desc").innerHTML = (photo.desc || "").replace(/\n/g, '<br>');
     document.getElementById("lightbox-counter").textContent = `${activeLightboxIndex + 1} / ${lightboxPlaylist.length}`;
     img.style.opacity = 1;
   }, 150);
