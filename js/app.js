@@ -95,7 +95,7 @@ const DEFAULT_DATABASE = {
       id: 8,
       date: "2025-12-09",
       title: "Graduación Michela",
-      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión,❤️🩹.",
+      desc: "Uno de los días donde más pudimos compartir junto a su mamá, me sentía muy nervioso, pero era algo que me hizo mucha ilusión, ya que también cumpliamos el primer mes de novios ❤️🩹.",
       img: "https://i.postimg.cc/RCfnjz4x/Whats-App-Image-2026-05-31-at-09-53-10.jpg"
     },
     {
