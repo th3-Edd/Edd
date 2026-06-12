@@ -239,6 +239,14 @@ const DEFAULT_DATABASE = {
       sender: "Eduardo",
       receiver: "Michela",
       text: "Se mantendrá abierta siempre, a menos que se cayeran los servidores o se dañen los códigos, o no pueda darle mantenimiento, empecé a programarla el 28 de mayo, hoy es 11 de junio, no sé exactamente cuando termine, si haces cambios en el candado superior, con la clave 1234, se verán reflejados únicamente en tu dispositivo, ya sea laptop o celular, cosas como agregar más cartas, cambiar imágenes, textos y de más, a menos de que se programen en los códigos, no serán visibles para nadie más."
+    },
+    {
+      id: 6,
+      title: "Después.",
+      date: "10/06/2026",
+      sender: "Eduardo",
+      receiver: "Michela",
+      text: "Incluso después de seguiste siendo un rayo de luz, los meses de abril y mayo pegaron duro, estrés, ansiedad, problemas familiares, rupturas, fueron algunas de las cosas que ocurrieron, mi mamá enfermó, me quedé sin ahorros y bueno, ahora sabemos que tiene un tumor benigno en el cerebro y que es propensa a sufrir de Alzheimer. Eso me ah hecho pensar mucho en lo importante que es recordar, Y durante todo eso, sin darme cuenta ya era 28 de mayo, apareciste, y en serio no esperaba nada, solo era una trasnoche más, hasta ver tus notificaciones y llorar como tontito. Aunque me gustaría que si alguna vez tú me recuerdas a mí, sea con una sonrisa.\n\nAhora quiero volver, volver a esforzarme por intentar ser quien quería ser contigo, ya que antes de ti no creo haber sido nadie, toda mi vida, por más que parezca haber estado planeada ah sido formada por decisiones momentáneas, sin saber realmente a donde iba, sólo dónde no quería estar, hasta que llegue a ti, me hiciste tener sueños, aspiraciones, metas y un lugar al cuál si quería pertenecer.\n\nTuve una entrevista, pero debo tener una segunda en modo conferencia virtual, no tiene una fecha estipulada, pero espero con ayuda de Dios empezar a laburar este mes, y poder aunque sea devolver el dinero que me diste, y si, el dinero nunca ah sido problema entre ambos, pero yo sé el esfuerzo que requiere, y hasta me sentí mal por recibirlo, asi que sin importar lo que venga lo voy a hacer, gracias por eso también michela.\n\nNo soy capaz de decirte adiós, porque sé que nunca saldrás de mi vida, así que elijo decirte “hasta pronto” que Dios sea el encargado de acercarnos en un futuro, ya sea para compartir una conversación, una sonrisa o simplemente para saber cómo nos ah tratado la vida, o del mismo modo sea él, el encargado de terminar de alejarnos.\n\nEspero que te cuides mucho, seas feliz, cumplas tus sueños, y que la vida siempre te trate con la misma dulzura con la que tú la vives ❤️\n\nHasta luego, mi más bonito recuerdo favorito❤️🌹"
     }
   ]
 };
