@@ -44,6 +44,12 @@ const MusicPlayer = {
       scUrl: "https://soundcloud.com/user-477006161/montell-fish-i-just-wanna-feel-your-love-again-sped-up?si=b08a1f2327b849febd2b75b485466cc0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     {
+      id: "track-4-1",
+      title: "I Just Wanna Feel Your Love",
+      artist: "Richy Lara",
+      scUrl: "https://soundcloud.com/richy-lara-742455054/i-just-wanna-feel-your-love?si=7abb8cd7080740bd8116038ccdaef1b3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+    },
+    {
       id: "track-5",
       title: "If It Only Gets Better",
       artist: "Unknown",

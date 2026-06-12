@@ -288,6 +288,13 @@ document.addEventListener("DOMContentLoaded", () => {
   renderStickers();
   
   // Inicializar playlist musical
+  if (db.playlist && Array.isArray(db.playlist)) {
+    MusicPlayer.playlist.forEach(defaultTrack => {
+      if (!db.playlist.some(t => t.id === defaultTrack.id)) {
+        db.playlist.push(defaultTrack);
+      }
+    });
+  }
   MusicPlayer.playlist = db.playlist || MusicPlayer.playlist;
   MusicPlayer.loadPlaylistFromStorage();
   MusicPlayer.init();
